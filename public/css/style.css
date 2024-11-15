@@ -10,7 +10,14 @@ body {
 
 .navbar {
   height: 5rem;
-  background-color: #eaecec;
+  background-color: #cfd1d1;
+}
+
+.navbar-nav, .d-flex{
+  background-color: #cfd1d1;
+  /* border-radius: 50px; */
+  width: 100%;
+
 }
 
 .fa-compass {

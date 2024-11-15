@@ -9,15 +9,33 @@
   <!-- <br> -->
 
   <style>
-    #filters {
+
+    #filters{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
+      /* border: 2px solid whitesmoke; */
+       margin: 1rem;
+      /* padding: 0px 2rem 0px 2rem; */ 
+      /* border-radius: 50px;
+      box-shadow: 10px 20px 40px rgb(224, 224, 224); */
+    }
+    .filter1{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       border: 2px solid whitesmoke;
-     margin: 1rem;
-     padding: 0px 2rem 0px 2rem;
-     border-radius: 50px;
-     box-shadow: 10px 20px 40px rgb(224, 224, 224);
+      /* /* margin: 1rem; */
+      padding: 0px 1rem 0px 1rem;  
+      border-radius: 50px;
+      box-shadow: 10px 20px 40px rgb(224, 224, 224);
+    }
+    .filter2{
+      display: block;
+      border-radius: 50px;
+      box-shadow: 10px 20px 40px rgb(224, 224, 224);
     }
 
     .filter {
@@ -25,7 +43,7 @@
       text-align: center;
       margin-top: 2rem;
       opacity: 0.7;
-      transition: 2s linear ;
+      transition: 2s linear;
     }
 
     .filter:hover {
@@ -33,24 +51,24 @@
       cursor: pointer;
     }
 
-    .tax-info{
+    .tax-info {
       display: none;
       color: rgb(253, 106, 106);
 
 
     }
 
-    .tax-toogle{
-      border: 1px solid black;
+    .tax-toogle {
+      /* border: 1px solid black; */
       border-radius: 50px;
       height: 4rem;
       padding: 1rem;
-      margin-left: 3rem;
+      /* margin-left: 3rem; */
       display: flex;
       align-items: center;
     }
 
-    .filter i:hover{
+    .filter i:hover {
       scale: 2;
       color: blue;
 
@@ -59,6 +77,9 @@
 
 
   <div id="filters">
+    <div class="filter1">
+
+    
     <div class="filter">
       <i class="fa-solid fa-fire"></i>
       <p>Trending</p>
@@ -95,13 +116,18 @@
       <i class="fa-solid fa-snowflake"></i>
       <p>Artic</p>
     </div>
+  </div>
 
+  <div class="filter2">
+
+  
     <div class="tax-toogle">
       <div class="form-check-reverse form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        <label class="form-check-label" for="flexSwitchCheckDefault">Price With Tax</label>
       </div>
     </div>
+  </div>
   </div>
   <br>
   <div class="row row-cols-lg-3  row-cols-md-2 row-cols-sm-1">
