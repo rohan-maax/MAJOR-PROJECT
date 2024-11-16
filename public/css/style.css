@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  height: 5rem;
+  height: 5rem !important;
   background-color: #cfd1d1;
 }
 
@@ -19,6 +19,7 @@ body {
   width: 100%;
 
 }
+
 
 .fa-compass {
   color: #fe424d;
