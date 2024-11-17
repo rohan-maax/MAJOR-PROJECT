@@ -1,12 +1,32 @@
 <% layout("/layouts/boilerplate") -%>
-<div class="row mt-3 ">
-    <h1 class="col-6 offset-3">Signup on Wonderlust</h1>
+
+<style>
+
+    .signup-outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .signup-inner{
+        border: 1px solid rgba(154, 189, 167, 0.479);
+margin: 2rem;
+padding: 2rem;
+border-radius: 1rem;
+box-shadow: 2px 20px 30px rgba(153, 101, 236, 0.521)  ;
+background-color: rgba(200, 116, 233, 0.158);
+    }
+</style>
+<div class="row mt-3 signup-outer ">
     
 
-    <div class="col-6 offset-3">
+    <div class="col-8 offset-3 signup-inner">
+    <h2 class="col-8" style=" color: red; padding-bottom: 5px; width: 100%; ">Signup on Wonderlust</h2>
+    
+
         <form method="POST" action="/signup" novalidate class="needs-validation">
-            <div class="md-3">
-                <label for="username" class="form-label">Username</label>
+            <div class="md-4">
+                <label for="username" class="form-label"><b>Username</b></label>
     
                 <input 
                 name="username" 
@@ -19,8 +39,8 @@
     
             </div>
             <br>
-            <div class="md-3">
-                <label for="email" class="form-label">Email</label>
+            <div class="md-4">
+                <label for="email" class="form-label"><b>Email</b></label>
     
                 <input 
                 name="email" 
@@ -35,8 +55,8 @@
     
             </div>
             <br>
-            <div class="md-3">
-                <label for="password" class="form-label">Password</label>
+            <div class="md-4">
+                <label for="password" class="form-label"><b>Password</b></label>
     
                 <input 
                 name="password" 

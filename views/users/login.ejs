@@ -1,43 +1,44 @@
 <% layout("/layouts/boilerplate") -%>
-<div class="row mt-3 ">
-    <h1 class="col-6 offset-3">Login on Wonderlust</h1>
-    
+<style>
 
-    <div class="col-6 offset-3">
-        <form method="POST" action="/login" novalidate class="needs-validation">
-            <div class="md-3">
-                <label for="username" class="form-label">Username</label>
-    
-                <input 
-                name="username" 
-                
-                type ="text" 
-                class="form-control"
-                required/>
-                
-    
-    
-            </div>
-            <br>
-           
-            <br>
-            <div class="md-3">
-                <label for="password" class="form-label">Password</label>
-    
-                <input 
-                name="password" 
-                
-                type ="password" 
-                class="form-control"
-                required/>
-                 
-     
-             
-    
-            </div>
-            <br>
-            <button class="btn btn-success">Login</button>
-         </form>
+    .login-outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .login-inner{
+        border: 1px solid rgba(154, 189, 167, 0.479);
+margin: 2rem;
+padding: 2rem;
+border-radius: 1rem;
+box-shadow: 2px 20px 30px rgba(155, 206, 235, 0.726)  ;
+background-color: rgba(70, 138, 240, 0.158);
+    }
+</style>
+    <div class="row mt-3 login-outer">
+
+
+        <div class="col-8 login-inner">
+           <h2 class="col-8" style="color: red; padding-bottom: 5px; ">Login on Wonderlust</h2>
+
+            <form method="POST" action="/login" novalidate class="needs-validation">
+                <div class="md-4">
+                    <label for="username" class="form-label"> <b>Username</b></label>
+
+                    <input name="username" type="text" class="form-control" required />
+                </div>
+                <br>
+
+                <br>
+                <div class="md-4">
+                    <label for="password" class="form-label"><b>Password</b></label>
+
+                    <input name="password" type="password" class="form-control" required />
+                </div>
+                <br>
+                <button class="btn btn-success">Login</button>
+            </form>
+        </div>
+
     </div>
-
-</div>
